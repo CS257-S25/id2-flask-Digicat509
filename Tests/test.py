@@ -2,8 +2,7 @@
 
 import unittest
 import sys
-from app import *
-from io import StringIO
+from app import app
 from ProductionCode import data_procesor
 
 dummyData = [
@@ -25,7 +24,7 @@ class TestMainPage(unittest.TestCase):
         response = self.app.get("/", follow_redirects=True)
         self.assertEqual(
             b"Hello, this is the homepage. " +
-            b"To find the frequency of meeting attended please do (url)/meeting/frequency",
+            b"To find the frequency of meeting attended please do (url)/meeting/[frequency, count]",
             response.data,
         )
 
@@ -50,7 +49,36 @@ class TestGetMeetingFrequency(unittest.TestCase):
         self.app = app.test_client()
         response = self.app.get("/0", follow_redirects=True)
         self.assertEqual(
-            b"sorry, wrong format, do this instead (url)/meeting/frequency",
+            b"404 Not Found: The requested URL was not found on the server. " +
+            b"If you entered the URL manually please check your spelling and try again. " +
+            b"Sorry, wrong format, do this instead (url)/meeting/[frequency, count]",
+            response.data,
+        )
+
+
+class TestGetMeetingCount(unittest.TestCase):
+    """Tests the path based method calls and pages"""
+
+    def setUp(self):
+        """Sets up the dummy data"""
+        data_procesor.initalize_dummy_data(dummyData)
+
+    def test_route(self):
+        """Tests a correct path that should display the methods result"""
+        self.app = app.test_client()
+        response = self.app.get("/meeting/count", follow_redirects=True)
+        self.assertEqual(
+            b"The average number of meetings attended is 6.75", response.data
+        )
+
+    def test_bad_route(self):
+        """Test a bad path that should display a correct usage hint"""
+        self.app = app.test_client()
+        response = self.app.get("/0", follow_redirects=True)
+        self.assertEqual(
+            b"404 Not Found: The requested URL was not found on the server. " +
+            b"If you entered the URL manually please check your spelling and try again. " +
+            b"Sorry, wrong format, do this instead (url)/meeting/[frequency, count]",
             response.data,
         )
 
