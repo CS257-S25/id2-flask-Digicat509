@@ -18,6 +18,10 @@ dummyData = [
 class TestMainPage(unittest.TestCase):
     """Tests the apps home page"""
 
+    def __init__(self, methodName = "runTest"):
+        super().__init__(methodName)
+        self.app = app.test_client()
+
     def test_route(self):
         """Tests that the home page has the correct welcome text"""
         self.app = app.test_client()
@@ -31,6 +35,10 @@ class TestMainPage(unittest.TestCase):
 
 class TestGetMeetingFrequency(unittest.TestCase):
     """Tests the path based method calls and pages"""
+
+    def __init__(self, methodName = "runTest"):
+        super().__init__(methodName)
+        self.app = app.test_client()
 
     def setUp(self):
         """Sets up the dummy data"""
@@ -58,6 +66,10 @@ class TestGetMeetingFrequency(unittest.TestCase):
 
 class TestGetMeetingCount(unittest.TestCase):
     """Tests the path based method calls and pages"""
+
+    def __init__(self, methodName = "runTest"):
+        super().__init__(methodName)
+        self.app = app.test_client()
 
     def setUp(self):
         """Sets up the dummy data"""
