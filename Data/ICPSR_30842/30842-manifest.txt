@@ -1,0 +1,124 @@
+File Manifest for ICPSR 30842
+
+Leukefeld, Carl. Criminal Justice Drug Abuse Treatment Studies (CJ-DATS):
+Restructuring Risky Relationships-HIV (RRR-HIV), 2005-2008 [United States].
+ICPSR30842-v1. Ann Arbor, MI: Inter-university Consortium for Political and
+Social Research [distributor], 2011-07-13.
+http://doi.org/10.3886/ICPSR30842.v1
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30842-descriptioncitation.pdf       -       -         -       2014-07-04  -
+
+    30842-related_literature.txt        -       -         -       daily       -
+
+    30842-manifest.txt                  -       -         -       daily       -
+
+    30842-Manual.pdf                    -       -         -       2011-07-13  2eda2c793a3f1905cf14ddf829478957
+
+
+DS0001 Restructuring Risky Relationships Intake
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30842-0001-Codebook.pdf             -       -         -       2011-07-13  67bcd7ee5da3b1485fddb39708865ad2
+
+    30842-0001-Data.dta                 -       444       495     2011-07-13  940fbc4ab61b03dc2fc5f77c3a64b8ca
+
+    30842-0001-Data.sav                 -       444       495     2011-07-13  3ba3ed321de303a2995a6e36d3d088bc
+
+    30842-0001-Data.stc                 -       444       495     2011-07-13  20ced335524ba5eb52917dcf8ec78157
+
+    30842-0001-Data.tsv                 -       444       495     2011-07-13  4efc3dddf24b3aba7c7ca6ed3c8a7edd
+
+    30842-0001-Data.txt                 3097    444       495     2011-07-13  907134958767b3f915a24a95ac0708c9
+
+    30842-0001-Frequencies.pdf          -       -         -       2011-07-13  6ec754f0fb66eaedc477ae67c7e3b839
+
+    30842-0001-Questionnaire.pdf        -       -         -       2011-07-13  e8d0877e1aa8b88f113c1abc836ab8b3
+
+    30842-0001-Setup.dct                -       -         -       2011-07-13  4c43d3130aa126da8f62e874c3c3860a
+
+    30842-0001-Setup.do                 -       -         -       2011-07-13  adefa8e0cdfca0113a2e4f10becac664
+
+    30842-0001-Setup.sas                -       -         -       2011-07-13  5f029afc949c3c84e828040e1e253927
+
+    30842-0001-Setup.sps                -       -         -       2011-07-13  4ee0cb201a57dd922efbbf9d9ad3d2d1
+
+    30842-0001-Supplemental_syntax.do   -       -         -       2011-07-13  8f2d0c9c2f871719e1deeeb8c7828b46
+
+    30842-0001-Supplemental_syntax.sas  -       -         -       2011-07-13  904258ebcf895ad8d039fbd611f6b1dd
+
+
+DS0002 Restructuring Risky Relationships 30-Day Follow-up
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30842-0002-Codebook.pdf             -       -         -       2011-07-13  5fd8b085c0f90bec1331828756c54d9e
+
+    30842-0002-Data.dta                 -       295       153     2011-07-13  4ecfc89d0e9fba85ce6ea898e7abf670
+
+    30842-0002-Data.sav                 -       295       153     2011-07-13  95b904c856e100847d0569c1a083100c
+
+    30842-0002-Data.stc                 -       295       153     2011-07-13  1dd45545c73db15b58911c27004d7189
+
+    30842-0002-Data.tsv                 -       295       153     2011-07-13  99cf292ebbcc88f06688324bba501991
+
+    30842-0002-Data.txt                 914     295       153     2011-07-13  13af198cdfe112ff5fcbda8731a227f5
+
+    30842-0002-Frequencies.pdf          -       -         -       2011-07-13  4d92c51c34355772f8df78b53407b61f
+
+    30842-0002-Questionnaire.pdf        -       -         -       2011-07-13  5ed7d095554e69b0dd4fb1e706f26944
+
+    30842-0002-Setup.dct                -       -         -       2011-07-13  20f3ec2eac5eb104e53af9f26a5c6e51
+
+    30842-0002-Setup.do                 -       -         -       2011-07-13  4e4cbb3188f1b6ebe30c53e72046caec
+
+    30842-0002-Setup.sas                -       -         -       2011-07-13  f8e3f2334254ec2b8721a9ae697d6fed
+
+    30842-0002-Setup.sps                -       -         -       2011-07-13  18f6c665543444e91ae4241b8ea9ac95
+
+    30842-0002-Supplemental_syntax.do   -       -         -       2011-07-13  f633e4b4609f46e90f854ddeaa666fa1
+
+    30842-0002-Supplemental_syntax.sas  -       -         -       2011-07-13  87fb2b2760983160aaaee9f2a08a5529
+
+
+DS0003 Restructuring Risky Relationships 90-Day Follow-up
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30842-0003-Codebook.pdf             -       -         -       2011-07-13  f12c2cc815109164610943242e46332e
+
+    30842-0003-Data.dta                 -       243       175     2011-07-13  9cd4ada09e4af2f845b3647e9e2e2410
+
+    30842-0003-Data.sav                 -       243       175     2011-07-13  578685ec049c8380bb39e6893363aea7
+
+    30842-0003-Data.stc                 -       243       175     2011-07-13  b08cbb60758040f205099a4bdfa179d1
+
+    30842-0003-Data.tsv                 -       243       175     2011-07-13  2f76e474f184106a8cd19c159a4dac6a
+
+    30842-0003-Data.txt                 963     243       175     2011-07-13  775b615d8f0f2e5039929345c31aeb54
+
+    30842-0003-Frequencies.pdf          -       -         -       2011-07-13  0c1ce0e2076319056020926dc4e670aa
+
+    30842-0003-Questionnaire.pdf        -       -         -       2011-07-13  66f534041a4f8e52ba72bce82101c233
+
+    30842-0003-Setup.dct                -       -         -       2011-07-13  57f0f202cbbd069fb6b415cffc1a0245
+
+    30842-0003-Setup.do                 -       -         -       2011-07-13  6e039add67693efce06de665989a50fa
+
+    30842-0003-Setup.sas                -       -         -       2011-07-13  3d4c55853aabf7745d06078d29ba2942
+
+    30842-0003-Setup.sps                -       -         -       2011-07-13  296b48ec07de08a571acdb3e7439e147
+
+    30842-0003-Supplemental_syntax.do   -       -         -       2011-07-13  4e05bfd1023b30eb60225c5fa2eeab98
+
+    30842-0003-Supplemental_syntax.sas  -       -         -       2011-07-13  ee7761a377f4222c8e103358516ae114
+
