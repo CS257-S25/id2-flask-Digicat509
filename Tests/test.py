@@ -62,7 +62,8 @@ class TestGetMeetingFrequency(unittest.TestCase):
         self.assertEqual(
             b"404 Not Found: The requested URL was not found on the server. " +
             b"If you entered the URL manually please check your spelling and try again. " +
-            b"Sorry, wrong format, do this instead /meeting/frequency or /meeting/count",
+            b"Sorry, wrong format, do this instead /meeting/frequency or " +
+            b"/meeting/count or arrests/low/high",
             response.data,
         )
 
@@ -93,10 +94,38 @@ class TestGetMeetingCount(unittest.TestCase):
         self.assertEqual(
             b"404 Not Found: The requested URL was not found on the server. " +
             b"If you entered the URL manually please check your spelling and try again. " +
-            b"Sorry, wrong format, do this instead /meeting/frequency or /meeting/count",
+            b"Sorry, wrong format, do this instead /meeting/frequency or " +
+            b"/meeting/count or arrests/low/high",
             response.data,
         )
 
+class TestDrugSaleArrests(unittest.TestCase):
+    """Tests the drug sale arrests route"""
+
+    def __init__(self, methodName="runTest"):
+        super().__init__(methodName)
+        self.app = app.test_client()
+
+    def setUp(self):
+        """Sets up the dummy data"""
+        data_procesor.initalize_dummy_data(dummyData)
+
+    def test_drug_sale(self):
+        """Test for route for drug sale arrests"""
+        response = self.app.get('/drug-sale-arrests/1/10', follow_redirects=True)
+        self.assertEqual(b"3 people", response.data)
+
+    def test_bad_route(self):
+        """Test a bad path that should display a correct usage hint"""
+        self.app = app.test_client()
+        response = self.app.get("/0", follow_redirects=True)
+        self.assertEqual(
+            b"404 Not Found: The requested URL was not found on the server. " +
+            b"If you entered the URL manually please check your spelling and try again. " +
+            b"Sorry, wrong format, do this instead /meeting/frequency or " +
+            b"/meeting/count or arrests/low/high",
+            response.data,
+        )
 
 class TestMeetingFrequency(unittest.TestCase):
     """Testing the get_row_titles method"""

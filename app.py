@@ -17,7 +17,8 @@ def homepage():
 @app.errorhandler(404)
 def page_not_found(e):
     """Makes a page for the user when an incorrect url is given"""
-    return str(e)+" Sorry, wrong format, do this instead /meeting/frequency or /meeting/count"
+    return str(e)+" Sorry, wrong format, do this instead /meeting/frequency or /meeting/count" \
+    " or arrests/low/high"
 
 @app.errorhandler(500)
 def python_bug(e):
