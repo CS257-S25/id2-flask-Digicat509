@@ -112,7 +112,7 @@ class TestGetDrugSaleArrests(unittest.TestCase):
 
     def test_drug_sale(self):
         """Test for route for drug sale arrests"""
-        response = self.app.get('/drug-sale-arrests/1/10', follow_redirects=True)
+        response = self.app.get('/arrests/1/10', follow_redirects=True)
         self.assertEqual(b"3 people", response.data)
 
     def test_bad_route(self):
