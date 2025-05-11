@@ -99,7 +99,7 @@ class TestGetMeetingCount(unittest.TestCase):
             response.data,
         )
 
-class TestDrugSaleArrests(unittest.TestCase):
+class TestGetDrugSaleArrests(unittest.TestCase):
     """Tests the drug sale arrests route"""
 
     def __init__(self, methodName="runTest"):
