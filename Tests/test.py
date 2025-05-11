@@ -28,7 +28,10 @@ class TestMainPage(unittest.TestCase):
         response = self.app.get("/", follow_redirects=True)
         self.assertEqual(
             b"Hello, this is the homepage. " +
-            b"To find the frequency of meeting attended please do (url)/meeting/[frequency, count]",
+            b"To find the frequency of meeting attended please do /meeting/frequency. " +
+            b"To find the average number of meeting attended please do /meeting/count. " +
+            b"To find the number of people with drug arrst counts within " +
+            b"a range low-high please do /arrests/low/high eg. /arrests/1/3",
             response.data,
         )
 
@@ -59,7 +62,7 @@ class TestGetMeetingFrequency(unittest.TestCase):
         self.assertEqual(
             b"404 Not Found: The requested URL was not found on the server. " +
             b"If you entered the URL manually please check your spelling and try again. " +
-            b"Sorry, wrong format, do this instead (url)/meeting/[frequency, count]",
+            b"Sorry, wrong format, do this instead /meeting/frequency or /meeting/count",
             response.data,
         )
 
@@ -90,7 +93,7 @@ class TestGetMeetingCount(unittest.TestCase):
         self.assertEqual(
             b"404 Not Found: The requested URL was not found on the server. " +
             b"If you entered the URL manually please check your spelling and try again. " +
-            b"Sorry, wrong format, do this instead (url)/meeting/[frequency, count]",
+            b"Sorry, wrong format, do this instead /meeting/frequency or /meeting/count",
             response.data,
         )
 
