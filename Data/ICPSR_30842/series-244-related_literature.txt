@@ -1,0 +1,30 @@
+Bibliography
+Criminal Justice Drug Abuse Treatment Studies (CJ-DATS) Series
+
+This bibliography includes published and unpublished works that are
+related to ICPSR series 244. It includes works that are based on
+primary or secondary analysis of the data, or which describe or critique
+those data or the collection methodology. This list represents all items
+known to ICPSR as of 2019-05-21.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR series used to:
+icpsr-biblio-notify@umich.edu 
+
+
+1. Ducharme, Lori J.; Chandler, Redonna K.; Wiley, Tisha RA..,
+"Implementing drug abuse treatment services in criminal justice settings:
+Introduction to the CJ-DATS study protocol series." Health and Justice.
+2013, 1, (5),. DOI: 10.1186/2194-7899-1-5
+
+2. Friedmann, P.D.; Hoskinson, R.; Gordon, M.; Schwartz, R.; Kinlock, T.;
+Knight, K.; Flynn, P.M.; Welsh, W.N.; Stein, L.A.; Sacks, S.; O'Connell,
+D.J.; Knudsen, H.K.; Shafer, M.S.; Hall, E.; Frisman, L.K., "Medication-
+assisted treatment in criminal justice agencies affiliated with the
+criminal justice-drug abuse treatment studies (CJ-DATS): Availability,
+barriers, and intentions." Substance Abuse. 2012, 33, (1), 9 - 18. DOI:
+10.1080/08897077.2011.611460
+
+3. Wade-Olson, Jeremiah, "Race, staff, and punishment: Representative
+bureaucracy in American state prisons." Administration and Society. in
+press 2016,. DOI: 10.1177/0095399716667156
